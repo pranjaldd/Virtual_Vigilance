@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  #dashboard-container {
+    display: flex;
+    height: 100vh;
+  }
+  #left-panel {
+    width: 20%;
+    background-color: lightgrey;
+    border: 2px solid grey;
+  }
+  #center-panel {
+    flex: 1;
+    background-color: lightblue;
+    border: 2px solid black;
+    padding: 20px;
+  }
+  .button {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+  <div id="dashboard-container">
+    <div id="left-panel">
+      <h1>MY TESTS</h1>
+      <h2>Tests</h2>
+      <p>1. Python basics test</p>
+      <button class="button" onclick="startPythonTest()">Start Test</button>
+    </div>
+    <div id="center-panel">
+      <h2>INSTRUCTIONS</h2>
+      <p>1. Read all questions carefully before answering.</p>
+      <p>2. You have 60 minutes to complete the exam.</p>
+      <p>3. Click the 'Start Exam' button to begin.</p>
+      <!-- Content will be loaded here dynamically -->
+    </div>
+  </div>
+
+  <script>
+
+
+    function startPythonTest() {
+      // Redirect or perform any action to start the Python basics test
+      console.log("Starting Python basics test...");
+      window.location.href = "https://forms.gle/sjDUeoFtmqcMwA4j7";
+    }
+  </script>
+</body>
+</html>

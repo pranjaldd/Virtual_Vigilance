@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  #container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: 16px;
+    display: block; /* Ensure labels appear on a new line */
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: calc(100% - 24px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  button {
+    width: calc(100% - 24px);
+    padding: 10px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 16px; /* Add some space between inputs and button */
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+  <div id="container">
+    <h1>Sign Up</h1>
+    <label for="signup-username">Username</label>
+    <input type="text" id="signup-username" placeholder="Enter your username">
+    <label for="signup-password">Password</label>
+    <input type="password" id="signup-password" placeholder="Enter your password">
+    <label for="signup-confirm-password">Confirm Password</label>
+    <input type="password" id="signup-confirm-password" placeholder="Confirm your password">
+    <button onclick="signup()">Sign Up</button>
+  </div>
+</body>
+</html>

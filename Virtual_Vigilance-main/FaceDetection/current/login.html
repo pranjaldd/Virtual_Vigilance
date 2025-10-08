@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  #container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: 16px;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: calc(100% - 24px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+  <div id="container">
+    <h1>Virtual Vigilance</h1>
+    <label for="username">Username</label>
+    <input type="text" id="username" placeholder="Enter your username">
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter your password">
+    <button onclick="login()">Login</button>
+    <button onclick="signup()">Sign Up</button> <!-- Added Sign Up button -->
+    <button onclick="forgotPassword()">Forgot Password</button>
+  </div>
+
+  <script>
+    function login() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Check if the entered username and password match the predefined values
+      if (username === "dk" && password === "123") {
+        alert("Login successful!");// Display an alert or redirect to another page
+        window.location.href = "dashboard.html";
+      } else {
+        alert("Invalid username or password. Please try again."); // Display an error message
+      }
+
+    }
+
+    function signup() {
+        window.location.href = "signup.html"; // Redirect to signup.html page
+    
+    }
+
+    function forgotPassword() {
+      // Write your forgot password logic here
+    }
+  </script>
+</body>
+</html>
